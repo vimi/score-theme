@@ -1,0 +1,85 @@
+/* This file will hold the main styles for your website. */
+
+body {
+  font-family: "Myriad Pro", verdana, sans-serif;
+}
+
+#zone-branding-wrapper {
+  margin: 1em 0;
+}
+
+#zone-menu-wrapper {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 1em 0;
+}
+
+h2 {
+  font-size: 1.4em;
+  color: green;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: green;
+}
+
+
+#main-menu li, h1, h2 {
+  font-family: "Myriad Pro", verdana, sans-serif;
+}
+
+#main-menu a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5em;
+}
+
+#main-menu a:hover, #main-menu .active a {
+  background: black;
+  color: white;
+}
+
+h1.title {
+  background: black;
+  color: white;
+  padding: 0.5em 0.5em;
+}
+/*
+#views_slideshow_cycle_main_nodequeue_1-block {
+  position: relative;
+}
+
+.transparent {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  background-color: black;
+  height: 100px;
+  width: 750px;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+}
+
+.slideshow {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  width: 730px;
+  color: white;  
+}
+
+.slideshow h2 {
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+}
+
+.slideshow p {
+  margin-top: 0px;
+}
+*/
