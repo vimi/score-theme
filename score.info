@@ -6,6 +6,7 @@ engine = phptemplate
 core = 7.x
 stylesheets[all][] = css/score.normalize.css
 stylesheets[all][] = css/score.styles.css
+stylesheets[all][] = css/score.global.css
 regions[header] = Header
 regions[navigation] = Navigation
 regions[highlighted] = Highlighted

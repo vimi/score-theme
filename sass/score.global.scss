@@ -1,0 +1,53 @@
+/* This file will hold the main styles for your website. */
+
+§font: Verdana, sans-serif;
+
+body {
+  font-family: $font;
+}
+
+h1.title {
+  background: black;
+  color: white;
+  padding: 0.5em 0.5em;
+}
+
+h2 {
+  font-size: 1.4em;
+  color: green;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: green;
+}
+
+a {
+  text-decoration: none;
+}
+
+#block-system-main-menu {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 1em 0;
+  
+  h2 {
+    display: none;
+  }
+  
+  li, h1, h2 {
+    font-family: $font;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
+  }
+  
+  a:hover, .active a {
+    background: black;
+    color: white;
+  }
+}
+

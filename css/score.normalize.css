@@ -1,328 +1,60 @@
-/*******************************************************************************
- * _utils.scss
- *
- * Sass offers come very useful features, these include variables functions and
- * mixins. Extensions such as Compass and Susy can also be used to provide extra
- * functions and mixins to be used throughout the theme. This file acts as a
- * single place for defining these things, which can then be accessed by
- * importing _utils.scss where required. The following should be defined in this
- * file:
- * - Custom Sass mixins for the theme.
- * - Custom Sass functions for the theme.
- * - Overriding the default variables provided by extensions such as Compass.
- * - Defining new variables for:
- *      - Colors.
- *      - Font sizes and families.
- *      - Layout and grid sizing.
- ******************************************************************************/
-/*! normalize.css v1.1.0 | MIT License | git.io/normalize */
-/*! normalize.css v1.1.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
+/*
+Syntax error: File to import not found or unreadable: normalize.
+              Load paths:
+                /Users/lsolesen/workspace/score-theme
+                /Users/lsolesen/workspace/score-theme/sass
+        on line 5 of sass/score.normalize.scss
 
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
+1: // Include the variables.
+2: @import "utils";
+3: 
+4: // Generate normalize.css.
+5: @import "normalize";
+6: 
+7: // Use 'border-box' for the box model.
+8: @import "toolkit/border-box";
 
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-[hidden] {
-  display: none;
-}
-
-/*! normalize.css v1.1.0 | Base | MIT License | git.io/normalize */
-html {
-  font-size: 100%;
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-html,
-button,
-input,
-select,
-textarea {
-  font-family: sans-serif;
-}
-
-body {
-  margin: 0;
-}
-
-/*! normalize.css v1.1.0 | Links | MIT License | git.io/normalize */
-a:focus {
-  outline: thin dotted;
-}
-
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/*! normalize.css v1.1.0 | Typography | MIT License | git.io/normalize */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0;
-}
-
-h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
-}
-
-h4 {
-  font-size: 1em;
-  margin: 1.33em 0;
-}
-
-h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0;
-}
-
-h6 {
-  font-size: 0.67em;
-  margin: 2.33em 0;
-}
-
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-b,
-strong {
-  font-weight: bold;
-}
-
-blockquote {
-  margin: 1em 40px;
-}
-
-dfn {
-  font-style: italic;
-}
-
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-p,
-pre {
-  margin: 1em 0;
-}
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
-  font-size: 1em;
-}
-
-pre {
+Backtrace:
+sass/score.normalize.scss:5
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/import_node.rb:67:in `import'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:217:in `visit_import'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:128:in `visit_root'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `each'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:235:in `watch'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin.rb:107:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin.rb:107:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/exec.rb:455:in `watch_or_update'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/exec.rb:318:in `process_result'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/exec.rb:41:in `parse'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/sass:9
+/usr/bin/sass:19:in `load'
+/usr/bin/sass:19
+*/
+body:before {
   white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-
-q {
-  quotes: none;
-}
-
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-dl,
-menu,
-ol,
-ul {
-  margin: 1em 0;
-}
-
-dd {
-  margin: 0 0 0 40px;
-}
-
-menu,
-ol,
-ul {
-  padding: 0 0 0 40px;
-}
-
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-
-/*! normalize.css v1.1.0 | Embedded Content | MIT License | git.io/normalize */
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/*! normalize.css v1.1.0 | Figures | MIT License | git.io/normalize */
-figure {
-  margin: 0;
-}
-
-/*! normalize.css v1.1.0 | Forms | MIT License | git.io/normalize */
-form {
-  margin: 0;
-}
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-  border: 0;
-  padding: 0;
-  white-space: normal;
-  *margin-left: -7px;
-}
-
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-
-button,
-input {
-  line-height: normal;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-  *overflow: visible;
-}
-
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-  *height: 13px;
-  *width: 13px;
-}
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-
-/*! normalize.css v1.1.0 | Tables | MIT License | git.io/normalize */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  *behavior: url('../behaviors/box-sizing/boxsizing.php');
-}
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: normalize.\A               Load paths:\A                 /Users/lsolesen/workspace/score-theme\A                 /Users/lsolesen/workspace/score-theme/sass\A         on line 5 of sass/score.normalize.scss\A \A 1: // Include the variables.\A 2: @import \"utils\";\A 3: \A 4: // Generate normalize.css.\A 5: @import \"normalize\";\A 6: \A 7: // Use 'border-box' for the box model.\A 8: @import \"toolkit/border-box\";"; }
